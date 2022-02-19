@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+<meta name="renderer" content="webkit">
+<meta name="google" value="notranslate">
+<meta name="robots" content="index,follow">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tensor&#39;s dev blog">
+<meta name="twitter:description" content="构建只为纯粹书写的博客">
+<meta name="twitter:image:src" content="http://www.chole.io/blog/images/pfp2.jpg">
+
+<meta property="og:url" content="http://www.chole.io/blog">
+<meta property="og:title" content="tensor&#39;s dev blog">
+<meta property="og:description" content="构建只为纯粹书写的博客">
+<meta property="og:site_name" content="tensor&#39;s dev blog">
+<meta property="og:image" content="http://www.chole.io/blog/images/pfp2.jpg">
+<meta property="og:type" content="website">
+<meta name="robots" content="noodp">
+
+<meta itemprop="name" content="tensor&#39;s dev blog">
+<meta itemprop="description" content="构建只为纯粹书写的博客">
+<meta itemprop="image" content="http://www.chole.io/blog/images/pfp2.jpg">
+
+<link rel="canonical" href="http://www.chole.io/blog">
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-itouch-icon" href="/favicon.png">
+<link rel="stylesheet" href="/bundle/index.css">
+<script type="text/javascript">
+    var timeSinceLang = {
+        year: '年前',
+        month: '个月前',
+        day: '天前',
+        hour: '小时前',
+        minute: '分钟前',
+        second: '秒前'
+    };
+    var root = '';
+</script>
+
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
+
+        <meta name="keywords" content="构建只为纯粹书写的博客">
+        <meta name="description" content="构建只为纯粹书写的博客">
+        <title>tensor&#39;s dev blog</title>
+    </head>
+    <body>
+        <article class="container">
+            <header class="header-wrap">
+  <a class="index" href="/">
+    <img class="logo" src="/images/pfp2.jpg" />
+    tensor&#39;s dev blog
+  </a>
+  <ul class="menu">
+      <li class="menu-item"><a href="/archive.html">归档</a></li>
+      <li class="menu-item"><a href="/tag.html">标签</a></li>
+      <li class="menu-item"><a href="/atom.xml">订阅</a></li>
+  </ul>
+</header>
+
+            <article class="main page">
+                <header class="header site">
+                    
+                        <img class="logo" src="/images/pfp2.jpg" />
+                        <h1 class="tag">digital identity</h1>
+                        <h2 class="tag-sub">1 篇文章</h2>
+                    
+                </header>
+                <ul class="article-list">
+                    
+                    <li class="article">
+                        <a class="title" href="/ssi.html">ERC-725 and Self-Sovereign Identity schemes in a multi-chain world</a>
+                        <div class="cover" style="background-image:url(/images/woman.jpg);"></div>
+                        <section class="preview content"><p>Digital Identity will change the way we represent and percieve each other and ourselves in the near future.</p>
+</section>
+                        <section class="info">
+                            
+                            
+                            
+                            <span class="date" data-time="1645360156"><span class="from"></span></span>
+                            
+                            <span class="tags">
+                            <a class="tag" href="/tag/digital%20identity/index.html">digital identity</a><a class="tag" href="/tag/blockchain/index.html">blockchain</a>
+                            </span>
+                        </section>
+                    </li>
+                    
+                </ul>
+                <section class="page-nav">
+                    
+                    
+                    
+                </section>
+            </article>
+        </article>
+        <footer class="footer">
+    <span class="copyright">
+        tensor&#39;s dev blog ©
+        <script type="text/javascript">
+            document.write(new Date().getFullYear());
+        </script>
+    </span>
+    <span class="publish">Powered by <a href="http://www.chole.io/" target="_blank">Ink</a></span>
+</footer>
+
+    </body>
+    <script src="/bundle/index.js"></script>
+</html>
